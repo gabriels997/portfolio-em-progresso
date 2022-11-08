@@ -143,8 +143,9 @@ a:hover {
     color: white;
 }
 
-.dd:hover:after {
-    content: ' ⮧';
+.dd:hover {
+    color: white;
+    transform: scale(1.3);
 }
 
 dt {
