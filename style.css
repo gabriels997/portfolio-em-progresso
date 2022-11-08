@@ -279,7 +279,7 @@ dt {
         flex-direction: column;
         padding-left: 50px;
         max-width: fit-content;
-        padding-right: 100px;
+        padding-right: 100vw;
     }
     
     .img1 {
