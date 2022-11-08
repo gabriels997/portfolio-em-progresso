@@ -22,6 +22,7 @@ body {
     font-size: 500%;
     margin-top: 15px;
     font-family: 'Trispace', sans-serif;
+    transition:  0.3s ease-in-out;
 }
 .nav a:hover {
     background: #8c583a;
@@ -71,9 +72,13 @@ body {
     margin: auto;
 }
 
+.nav2 li {
+    transition:  0.3s ease-in-out;
+}
+
 .nav2 li:hover {
     text-decoration: underline;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .imghtml {
@@ -141,6 +146,7 @@ a{
     font-size: 150%;
     cursor: pointer;
     text-decoration: underline;
+    transition:  0.3s ease-in-out;
 }
 
 .dd:hover {
