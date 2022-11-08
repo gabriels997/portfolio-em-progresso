@@ -262,6 +262,13 @@ dt {
 
 @media screen and (max-width: 720px) {
     
+    /*
+    * {
+        border: solid 1px #fff
+
+    }
+    */
+
     body {
         margin: 0px;
         padding: 0px;
@@ -270,6 +277,9 @@ dt {
     .nav {
         display: flex;
         flex-direction: column;
+        padding-left: 50px;
+        max-width: fit-content;
+        padding-right: 100px;
     }
     
     .img1 {
@@ -302,7 +312,7 @@ dt {
     }
 
     .conhecimentos {
-        max-width: 83vw;
+        max-width: 83vw;    
     }
 
     .conhecimentos-h1 {
