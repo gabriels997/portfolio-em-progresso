@@ -1,0 +1,30 @@
+.js-conhecimentos dt{   
+    display: none;
+}
+
+.ativo {
+    display: block !important;
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0px, 0, 0);
+    }
+}
+
+.js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: 1s;
+}
+
+.js-scroll.animar {
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+}
