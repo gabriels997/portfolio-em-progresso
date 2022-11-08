@@ -42,6 +42,8 @@ function animaScroll() {
         const sectionVisible = (sectionTop - windowMetade) < 0;
         if(sectionVisible) {
             section.classList.add('animar')
+        } else {
+            section.classList.remove('animar')
         }
     });
 }
