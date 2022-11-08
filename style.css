@@ -268,6 +268,7 @@ dt {
 
     }
     */
+    
 
     body {
         margin: 0px;
@@ -279,7 +280,7 @@ dt {
         flex-direction: column;
         padding-left: 50px;
         max-width: fit-content;
-        padding-right: 100vw;
+        padding-right: 88vw;
     }
     
     .img1 {
