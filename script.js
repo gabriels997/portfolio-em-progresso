@@ -32,7 +32,7 @@ function scrollToSec() {
 scrollToSec();
 
 const section = document.querySelectorAll('.js-scroll');
-const windowMetade = window.innerHeight * 0.8;
+const windowMetade = window.innerHeight * 0.9;
 section[0].classList.add('animar');
 
  

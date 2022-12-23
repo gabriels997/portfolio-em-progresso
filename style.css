@@ -12,6 +12,7 @@ body {
 .nav {
     display: flex;
     justify-content: space-around;
+    height: 70px;
     font-size: 30%;
     background: #D9D9D9;
     padding-bottom: 10px;
@@ -21,6 +22,7 @@ body {
     color: #3B3B40;
     font-size: 500%;
     margin-top: 15px;
+    padding-top: 10px;
     font-family: 'Trispace', sans-serif;
     transition:  0.3s ease-in-out;
 }
@@ -37,7 +39,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-bottom: 13vh;
 }
 
 .header-div {
@@ -46,24 +48,53 @@ body {
 }
 
 .titulo-box {
-    background: #3B3B40;
+    display: flex;
+    flex-direction: column;
+    background: #3b3b40;
     min-width: 40vw;
     margin-top: 20px;
     margin-left: 30px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     padding-top: 10px;
-    box-shadow: 5px 5px 5px #d9d9d933;
+    padding-bottom: 40px;
 }
 
 .header-h1 {
+    white-space: ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
     margin: auto;
+    margin-left: 5px;
+    margin-right: 10px;
     text-align: center;
     font-size: 350%;
+    animation: typewriter 2s steps(200),
+    blink 800ms steps(29) infinite normal;
+    border-right: 5px solid rgba(78, 73, 73, 0.342);
+}
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
 }
 
 .header-h2 {
+    padding-top: 30px;
     text-align: center;
     text-decoration: underline;
+    font-size: 250%;
 }
 
 .nav2 {
@@ -99,7 +130,13 @@ body {
     gap: 50px;
     list-style: none;
     flex-direction: row;
-    margin-top: 50px;
+    margin: 0px 0px 0px 30px;
+    background: #3B3B40;
+    min-width: 40vw;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 150px;
 }
 
 a{
@@ -126,7 +163,6 @@ a{
     margin-top: 20vh;
     margin-bottom: 20vh;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 2px #d9d9d927;
     padding: 20px;
 }
 
@@ -143,7 +179,7 @@ a{
     margin: auto;
     margin-top: 15px;
     text-align: center;
-    font-size: 150%;
+    font-size: 250%;
     cursor: pointer;
     text-decoration: underline;
     transition:  0.3s ease-in-out;
@@ -161,6 +197,7 @@ a{
 dt {
     margin: auto;
     text-align: center;
+    font-size: 200%;
     margin-bottom: 20px;
 }
 
@@ -191,9 +228,10 @@ dt {
 
 .div1 {
     background: #3B3B40;
-    width: 100px;
-    height: 100px;
+    width: 15vw;
+    height: 30vh;
     text-align: center;
+    font-size: 300%;
     border-style: solid;
     border-color: black;
     border-radius: 20px;
@@ -201,9 +239,10 @@ dt {
 
 .div2 {
     background: #8c583a;
-    width: 100px;
-    height: 100px;
+    width: 15vw;
+    height: 30vh;
     text-align: center;
+    font-size: 300%;
     border-style: solid;
     border-color: black;
     border-radius: 20px;
@@ -211,28 +250,20 @@ dt {
 
 .div3 {
     background: #794532;
-    width: 100px;
-    height: 100px;
+    width: 15vw;
+    height: 30vh;
     text-align: center;
+    font-size: 300%;
     border-style: solid;
     border-color: black;
     border-radius: 20px;
 }
 
-.div1:hover {
+.div1:hover, .div2:hover, .div3:hover {
     background: #D9D9D9;
     color: #3B3B40;
 }
 
-.div2:hover {
-    background: #D9D9D9;
-    color: #3B3B40;
-}
-
-.div3:hover {
-    background: #D9D9D9;
-    color: #3B3B40;
-}
 
 .footer {
     text-align: center;
@@ -243,11 +274,13 @@ dt {
 
 .footer h1 {
     padding-top: 20px;
+    font-size: 250%;
 }
 
 .footer a {
     color: #3B3B40;
     font-weight: 700;
+    font-size: 200%;
 }
 
 .footer a:hover {
@@ -255,7 +288,7 @@ dt {
     text-decoration: underline;
 }
 
-.wpp {
+.gmail {
     margin-bottom: 0px;
     padding-bottom: 20px;
 }
@@ -265,7 +298,6 @@ dt {
     /*
     * {
         border: solid 1px #fff
-
     }
     */
     
@@ -278,9 +310,17 @@ dt {
     .nav {
         display: flex;
         flex-direction: column;
-        padding-left: 50px;
-        max-width: fit-content;
-        padding-right: 88vw;
+        align-items: center;
+        height: auto;
+        gap: 50px;
+        width: fit-content;
+        padding-left: 100px;
+        margin: auto;
+        padding-right: 100px;
+    }
+    .header-div {
+        display: flex;
+        width: 100vw;
     }
     
     .img1 {
@@ -288,42 +328,38 @@ dt {
     }
 
     .titulo-box {
-        max-width: 83vw;
-    }
-
-    .titulo-box .header-h1 {
-        font-size: 200%;
+        margin: 0px;
     }
 
     .nav2 ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .nav2 .imghtml {
-        max-width: 10%;
-    }
-
-    .nav2 .imgcss {
-        max-width: 8%;
-    }
-
-    .nav2 .imgjs {
-        max-width: 15%;
-    }
-
-    .conhecimentos {
-        max-width: 83vw;    
+        display: none;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding-left: 300px;
     }
 
     .conhecimentos-h1 {
+        font-size: 250%;
+    }
+
+    .dd {
         font-size: 200%;
     }
 
+    
+
     .div-projetos {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 80px;
+        gap: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 40px;
+    }
+
+    .div1, .div2, .div3 {
+        width: 33vw;
     }
 }
